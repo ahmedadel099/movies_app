@@ -2,7 +2,7 @@
 
 used in this app
 
-[the moviedb API](themoviedb.org)  
+[the moviedb API](https://www.themoviedb.org/)  
 
 [bloc as state management](https://pub.dev/packages/bloc)
 
