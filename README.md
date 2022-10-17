@@ -2,11 +2,11 @@
 
 used in this app
 
-#[the moviedb API](themoviedb.org)  
+[the moviedb API](themoviedb.org)  
 
-#[bloc as state management](pub.dev/packages/bloc)
+[bloc as state management](https://pub.dev/packages/bloc)
 
-#[Clean Archtecture]()
+[Clean Archtecture]()
 
 
 ## screenshots
