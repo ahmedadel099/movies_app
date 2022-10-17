@@ -1,6 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:moviesapp/core/error/exceptions.dart';
 import 'package:moviesapp/core/error/failuer.dart';
+import 'package:moviesapp/movies/domain/entities/all_popular_movies.dart';
 import 'package:moviesapp/movies/domain/entities/movie.dart';
 import 'package:moviesapp/movies/domain/entities/movies_details.dart';
 import 'package:moviesapp/movies/domain/entities/movies_recommendations.dart';
@@ -67,6 +68,17 @@ class MovieRepository extends BaseMovieRepository {
     }
   }
 
-  
+  @override
+  Future<Either<Failure, List<Movie>>> getAllPopularMovies() async{
+    final result = await baseMovieRemoteDataSorce.getAllPopularMovies();
+    try {
+      return Right(result);
+    } on ServerException catch (failure) {
+      return left(ServerFailure(failure.errorMessageModel.statusMessage));
+    }
+  }
+
+
+
 
 }

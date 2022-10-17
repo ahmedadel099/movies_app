@@ -19,7 +19,6 @@ class NowPlayingComponent extends StatelessWidget {
       buildWhen: (previous, current) =>
           previous.nowPlayingState != current.nowPlayingState,
       builder: (context, state) {
-        print('NowPlayingComponent');
         switch (state.nowPlayingState) {
           case RequestState.loading:
             return const SizedBox(

@@ -2,8 +2,9 @@
 import 'package:moviesapp/movies/domain/entities/genres.dart';
 import 'package:moviesapp/movies/domain/entities/movies_details.dart';
 import 'package:moviesapp/movies/domain/entities/movies_recommendations.dart';
+import 'package:moviesapp/tvs/domain/entities/tvs_recommendations.dart';
 
-MoviesDetails movieDetailDummy = const MoviesDetails(
+MoviesDetails movieDetailDummy =  const MoviesDetails(
   backdropPath: "/nmGWzTLMXy9x7mKd8NKPLmHtWGa.jpg",
   genres: [
     Genres(name: 'Family', id: 10751),
@@ -15,7 +16,6 @@ MoviesDetails movieDetailDummy = const MoviesDetails(
   runTime: 87,
   title: "Minions: The Rise of Gru",
   voteAverage: 7.8,
-  // runTime: null,
 );
 
 List<MoviesRecommendations> recommendationDummy = [
